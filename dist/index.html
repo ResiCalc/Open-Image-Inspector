@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <meta name="description" content="Inspect image file properties and selected metadata markers locally in your browser." />
+    <title>Open Image Inspector</title>
+    <script type="module" crossorigin src="/assets/index-J0T-lugh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D1xuFE7y.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#top"><span class="brand-mark">✳</span> Open Image Inspector</a>
+        <span class="local-note"><span></span> Local file inspection</span>
+      </header>
+
+      <section class="intro" id="top">
+        <p class="eyebrow">OPEN SOURCE · NO RUNTIME DEPENDENCIES</p>
+        <h1>Know what is inside<br /><span>your image files.</span></h1>
+        <p class="lead">Check file size, format, dimensions, and selected metadata markers in your browser.</p>
+      </section>
+
+      <section class="workspace" aria-label="Image file inspector">
+        <div class="tool-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">FILE INSPECTOR</p><h2>Inspect image files</h2></div>
+            <span class="privacy-badge">Files stay on this device</span>
+          </div>
+
+          <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choose image files">
+            <input id="fileInput" type="file" accept="image/*,.jpg,.jpeg,.png,.webp,.gif,.bmp,.avif,.tif,.tiff,.ico,.heic,.heif" multiple hidden />
+            <div class="upload-icon">↑</div>
+            <strong>Drop image files here</strong>
+            <span>or click to browse · multiple files supported</span>
+          </div>
+
+          <div class="actions"><span id="fileSummary">No files selected</span><div><button class="button quiet hidden" id="clearButton">Clear</button><button class="button primary" id="runButton" disabled>Choose files to inspect</button></div></div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+          <div class="results" id="results"></div>
+        </div>
+      </section>
+
+      <section class="limits">
+        <h2>What this tool checks</h2>
+        <p>Dimensions are read from supported file headers. JPEG, PNG, and WebP files receive a limited scan for EXIF, XMP, IPTC, and text metadata markers. Other formats show metadata status as unknown. This tool does not decode image pixels, read EXIF field values, or modify files.</p>
+      </section>
+
+      <footer><span>Open Image Inspector</span><a href="https://imagepixelconverter.com/en/image-checker/" target="_blank" rel="noreferrer">View online tools ↗</a></footer>
+    </main>
+  </body>
+</html>
