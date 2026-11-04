@@ -1,29 +1,4 @@
-# Open Image Inspector
 
-A lightweight browser-based tool for checking image file details and selected metadata markers. Review file size, format, dimensions, and supported metadata indicators before sharing or organizing your images.
-
-## Repository Description
-
-### GitLab Description
-
-```text
-Open Image Inspector helps you review image file size, format, dimensions, and selected metadata markers directly in your browser. Quickly check supported file details before sharing or organizing images.
-```
-
-Suggested project name: `open-image-inspector`  
-Suggested GitLab topics: `image-inspector`, `image-metadata`, `exif`, `privacy`, `javascript`, `no-dependencies`
-
-### GitHub Short Description
-
-```text
-Check image file size, format, dimensions, and selected metadata markers in your browser.
-```
-
-Suggested GitHub topics: `image-inspector` `image-metadata` `exif` `privacy` `javascript` `no-dependencies`
-
-### Long Description
-
-```text
 Open Image Inspector is a lightweight browser-based utility for reviewing image file details. It reports file size and format, reads dimensions from supported file headers, and checks selected EXIF, XMP, IPTC, and text markers in JPEG, PNG, and WebP files. Use it to quickly review supported image properties before sharing or organizing files.
 
 Online tools:
@@ -31,7 +6,7 @@ Online tools:
 - EXIF inspection: https://imagepixelconverter.com/en/exif-viewer/
 
 The marker scan is limited to selected file formats and metadata indicators. It does not display individual EXIF field values or modify images. Formats without a supported scan are reported as unknown.
-```
+
 
 ## Online References
 
